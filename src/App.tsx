@@ -29,7 +29,7 @@ function App() {
   const [error, setError] = useState('');
 
   useEffect(() => {
-    const newSocket = io('http://localhost:3001');
+    const newSocket = io('https://teencards.onrender.com/');
     setSocket(newSocket);
 
     // Socket event listeners
