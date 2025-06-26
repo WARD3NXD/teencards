@@ -9,7 +9,7 @@ const app = express();
 const server = createServer(app);
 const io = new Server(server, {
   cors: {
-    origin: "https://teencards.vercel.app/",
+    origin: "https://teencards.vercel.app",
     methods: ["GET", "POST"]
   }
 });
