@@ -151,6 +151,13 @@ export const Game: React.FC<GameProps> = ({
             >
               Raise (₹{Math.max(gameState.currentBet * 2, gameState.currentBet + 2)})
             </button>
+
+            <button
+              onClick={() => socket.emit("show-cards", { roomId })}
+              className="bg-yellow-500 hover:bg-yellow-600 text-white px-4 py-2 rounded-lg shadow-md"
+            >
+              Show
+            </button>
           </div>
         )}
 
